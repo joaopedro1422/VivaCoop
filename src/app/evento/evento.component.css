@@ -1,0 +1,58 @@
+
+main {
+    padding: 20px;
+    text-align: center;
+	margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.calendario-eventos {
+    margin-bottom: 40px;
+}
+.calendario-eventos h2 {
+    color: #3458ff;
+	  font-size: 2.5rem;
+	  margin-bottom: 1.5rem;
+	  text-align: center;
+	  font-family: 'Raleway', sans-serif;
+}
+
+.detalhes-eventos {
+    max-width: 800px;
+    margin: auto;
+}
+.detalhes-eventos h2{
+    color: #3458ff;
+	  font-size: 2.5rem;
+	  margin-bottom: 1.5rem;
+	  text-align: center;
+	  font-family: 'Raleway', sans-serif;
+}
+
+.evento {
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #3458ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1d3fcf;
+}
+
+.footer {
+    background-color: #3458ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
