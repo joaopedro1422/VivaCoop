@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de Serviços</title>
+  <link rel="stylesheet" href="servicos.component.css">
+</head>
+<body>
+  <section class="catalogo">
+    <h2>Serviços Disponíveis</h2>
+    <p>Confira os serviços que disponibilizamos para ajudar você a alcançar seus objetivos com eficiência, qualidade e o suporte que você merece.</p>
+    <div class="linha-azul"></div>
+    <div class="servicos-container">
+      <!-- Educação -->
+      <div class="servico">
+        <div class="servico-topo">
+          <img src="assets/imagens/educacao.png" alt="Ícone Educação">
+        </div>
+        <div class="servico-corpo">
+          <h3>Educação</h3>
+          <p>Capacitamos nossos cooperados e a comunidade com programas educacionais de qualidade, voltados para o desenvolvimento pessoal, profissional e social.</p>
+          <a href="http://localhost:4200/educacao">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- Apoio Financeiro -->
+      <div class="servico">
+        <div class="servico-topo">
+          <img src="assets/imagens/apoio.png" alt="Ícone Apoio">
+        </div>
+        <div class="servico-corpo">
+          <h3>Apoio Financeiro</h3>
+          <p>Oferecemos apoio financeiro seguro para estudos, projetos pessoais e empreendimentos, com orientação clara e sem burocracia.</p>
+          <a href="http://localhost:4200/apoiofinanceiro">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- Treinamento -->
+      <div class="servico">
+        <div class="servico-topo">
+          <img src="assets/imagens/treinamento.png" alt="Ícone Treinamento">
+        </div>
+        <div class="servico-corpo">
+          <h3>Treinamento</h3>
+          <p>Promovemos treinamentos contínuos voltados para a prática e aprimoramento das habilidades técnicas e comportamentais dos nossos cooperados.</p>
+          <a href="http://localhost:4200/treinamento">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- Consultoria -->
+      <div class="servico">
+        <div class="servico-topo">
+          <img src="assets/imagens/consultoria.png" alt="Ícone Consultoria">
+        </div>
+        <div class="servico-corpo">
+          <h3>Consultoria</h3>
+          <p>Disponibilizamos consultoria especializada em diversas áreas, com foco em soluções práticas e sustentáveis.</p>
+          <a href="http://localhost:4200/consultoria">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="formulario-servico">
+    <h2>Solicitação de Serviço</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <select name="servico" required>
+        <option value="">Selecione um serviço</option>
+        <option value="educacao">Educação</option>
+        <option value="apoiofinanceiro">Apoio Financeiro</option>
+        <option value="treinamento">Treinamento</option>
+        <option value="consultoria">Consultoria</option>
+      </select>
+      <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+  
+  
+</body>
+</html>

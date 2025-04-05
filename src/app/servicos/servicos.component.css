@@ -1,0 +1,172 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  /* Seção do catálogo */
+  .catalogo {
+    padding: 40px 20px;
+  }
+  
+  .catalogo h2 {
+    color: #3366ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .catalogo p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  /* Container dos serviços */
+  .servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Estilo do card */
+  .servico {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .servico {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Parte azul do card */
+  .servico-topo {
+    background-color: #3366ff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .servico-topo img {
+    width: 60px;
+    transition: filter 0.3s ease;
+  }
+
+  .servico:hover .servico-topo img {
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Parte branca do card */
+  .servico-corpo {
+    background-color: white;
+    padding: 15px;
+  }
+  
+  .servico-corpo h3 {
+    color: #3366ff;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .servico-corpo p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botão Saiba Mais */
+  .servico-corpo a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3366ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .servico-corpo a:hover {
+    background-color: #2c3e90;
+  }
+  .formulario-servico {
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .formulario-servico h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .formulario-servico form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario-servico input,
+  .formulario-servico select,
+  .formulario-servico textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .formulario-servico button {
+    padding: 10px;
+    background-color: #3366ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .formulario-servico button:hover {
+    background-color: #2c3e90;
+  }
+  
+  .linha-azul {
+    width: 200px;
+    height: 3px;
+    background-color: #3366ff;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  
+  
