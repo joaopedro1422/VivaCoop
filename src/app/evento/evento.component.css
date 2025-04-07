@@ -48,11 +48,3 @@ button {
 button:hover {
     background-color: #1d3fcf;
 }
-
-.footer {
-    background-color: #3458ff;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
