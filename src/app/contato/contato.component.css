@@ -38,6 +38,8 @@
 		border: 1px solid #ccc;
 		border-radius: 8px;
 		font-size: 1rem;
+		resize: none;
+		font-family: 'Lato', sans-serif;
 	
 		&::placeholder {
 		  color: #888888;
