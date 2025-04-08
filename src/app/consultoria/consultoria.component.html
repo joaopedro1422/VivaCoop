@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultoria - Cooperativa VIVA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="consultoria.component.css" />
+</head>
+<body>
+  <div class="pagina-servico">
+    <section class="servico-detalhe">
+      <div class="titulo-com-icone">
+          <img src="assets/imagens/consultoria.png" alt="Ícone Consultoria">
+          <h2>Consultoria</h2>
+      </div>
+      <p>Ajudamos cooperados e empreendedores com soluções estratégicas para seus negócios e projetos.</p>
+      <div class="linha-azul"></div>
+      <div>
+
+        <h3 class="subtitulo">Descrição</h3>
+        <p>
+          A Consultoria da Cooperativa VIVA oferece orientação especializada para negócios cooperados, 
+          pequenas empresas e projetos sociais. Atua em áreas como gestão, finanças, marketing e planejamento estratégico.
+        </p>
+
+        <h3 class="subtitulo">Benefícios</h3>
+        <ul class="lista-beneficios">
+          <li>Acompanhamento personalizado por consultores experientes</li>
+          <li>Soluções adaptadas à realidade de cada cooperado</li>
+          <li>Melhoria na organização e nos resultados dos empreendimentos</li>
+          <li>Acesso a relatórios e diagnósticos estratégicos</li>
+        </ul>
+
+        <h3 class="subtitulo">Como acessar</h3>
+        <ul class="lista-beneficios">
+          <li>Descreva sua demanda no formulário</li>
+          <li>Nossa equipe entrará em contato para agendar uma primeira conversa</li>
+        </ul>
+
+        <div class="caso-sucesso">
+          “Com a consultoria, organizamos nossa contabilidade e passamos a crescer com muito mais segurança.”<br>
+          — Grupo de cooperados do segmento de alimentação.
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="formulario-servico">
+    <h2>Solicitação de Serviço</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="telefone" name="telefone" placeholder="Seu telefone" required>
+      <select name="servico" required>
+        <option value="">Selecione um serviço</option>
+        <option value="consultoria">Consultoria</option>
+      </select>
+      <select name="consultor" required>
+        <option value="">Selecione um consultor</option>
+        <option value="consultores">Qualquer um</option>
+        <option value="consultores">João Pedro</option>
+        <option value="consultores">Natã Cavalcante</option>
+        <option value="consultores">Fábio Vinicius</option>
+      </select>
+      <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
+</body>
+</html>
