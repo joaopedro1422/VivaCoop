@@ -1,0 +1,10 @@
+<div class="news-container">
+	<div class="news-card" *ngFor="let news of newsList" [routerLink]="['/noticia', news.id]">
+	  <img [src]="news.image" alt="News Image">
+	  <div class="news-content">
+		<h3>{{ news.title }}</h3>
+		<p>{{ news.excerpt }}</p>
+		<span class="continue-reading">Continue lendo →</span>
+	  </div>
+	</div>
+  </div>
