@@ -2,6 +2,7 @@
 	max-width: 800px;
 	margin: 20px auto;
 	padding: 20px;
+	font-family: 'Lato', sans-serif;
   }
   
   .news-detail h1 {
@@ -22,11 +23,21 @@
 	border-radius: 8px;
 	margin-bottom: 20px;
   }
+
+  .news-detail h1{
+	text-align: justify;
+	color: #2c3e50;
+	font-family: 'Raleway', sans-serif;
+  }
   
   .content {
 	font-size: 16px;
 	line-height: 1.6;
 	color: #333;
+  }
+  .content p{
+	text-align: justify;
+	color: #2c3e50;
   }
   
   .share {
@@ -36,6 +47,7 @@
   .share h3 {
 	font-size: 20px;
 	margin-bottom: 10px;
+	color: #2c3e50;
   }
   
   .share button {
@@ -55,6 +67,7 @@
   .comments h3 {
 	font-size: 20px;
 	margin-bottom: 10px;
+	color: #2c3e50;
   }
   
   .comments textarea {
@@ -64,6 +77,14 @@
 	border: 1px solid #e0e0e0;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	resize: none;
+	font-family: 'Lato', sans-serif;
+	color: #888888; 
+	font-size: 1rem;
+	&::placeholder {
+		color: #888888;
+		opacity: 1;
+	  }
   }
   
   .comments button {
