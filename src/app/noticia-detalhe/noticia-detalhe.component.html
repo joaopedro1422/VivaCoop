@@ -1,0 +1,24 @@
+<div class="news-detail" *ngIf="news">
+	<h1>{{ news.title }}</h1>
+	<p class="date">{{ news.date | date: 'mediumDate' }}</p>
+	<img [src]="news.image" alt="News Image">
+	<div class="content">
+	  <p>{{ news.content }}</p>
+	</div>
+  
+	<div class="share">
+	  <h3>Compartilhar</h3>
+	  <button (click)="share('facebook')">Facebook</button>
+	  <button (click)="share('twitter')">Twitter</button>
+	  <button (click)="share('linkedin')">LinkedIn</button>
+	</div>
+  
+	<div class="comments">
+	  <h3>Comentários</h3>
+	  <textarea placeholder="Deixe seu comentário..." [(ngModel)]="newComment"></textarea>
+	  <button (click)="addComment()">Enviar</button>
+	  <div *ngFor="let comment of comments">
+		<p>{{ comment }}</p>
+	  </div>
+	</div>
+  </div>
