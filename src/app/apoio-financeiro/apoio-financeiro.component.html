@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apoio Financeiro | Cooperativa VIVA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="apoio-financeiro.component.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
       <h2>Apoio Financeiro</h2>
     </div>
 
-    <p style="text-align: justify;">
+    <p>
       Este serviço visa auxiliar os cooperados com soluções financeiras responsáveis e solidárias,
       promovendo o acesso ao crédito consciente, o fortalecimento dos pequenos negócios e o suporte em momentos de necessidade.
     </p>
@@ -30,7 +31,8 @@
     <h3 class="subtitulo">Como acessar</h3>
     <ul class="lista-beneficios">
       <li>Selecione no formulário de serviços: Apoio Financeiro</li>
-      <li>Envie sua solicitação preenchendo o formulário online</li>
+      <li>Preencha o formulário com seus dados e a sua necessidade</li>
+      <li>Envie a solicitação</li>
       <li>Aguarde a análise e retorno da equipe financeira</li>
     </ul>
 
@@ -38,5 +40,21 @@
       “Com o microcrédito da cooperativa, abri minha oficina de costura e hoje já tenho duas funcionárias!” — Maria E., cooperada desde 2021.
     </div>
   </section>
+
+  <section class="formulario-servico">
+    <h2>Solicitação de Serviço</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="telefone" name="telefone" placeholder="Seu telefone" required>
+      <select name="servico" required>
+        <option value="">Selecione um serviço</option>
+        <option value="apoiofinanceiro">Apoio Financeiro</option>
+      </select>
+      <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
 </body>
 </html>

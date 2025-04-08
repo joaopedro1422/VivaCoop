@@ -1,6 +1,6 @@
 /* Estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -16,11 +16,12 @@ body {
     color: #3366ff;
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .catalogo p {
     color: #555;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 30px;
   }
   
@@ -62,8 +63,6 @@ body {
     cursor: pointer;
   }
   
-  
-  
   /* Parte azul do card */
   .servico-topo {
     background-color: #3366ff;
@@ -75,7 +74,7 @@ body {
   
   .servico-topo img {
     width: 60px;
-    transition: filter 0.3s ease;
+    filter: brightness(0) invert(1);
   }
 
   .servico:hover .servico-topo img {
@@ -90,14 +89,16 @@ body {
   
   .servico-corpo h3 {
     color: #3366ff;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 8px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .servico-corpo p {
     color: #555;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
   }
   
   /* Botão Saiba Mais */

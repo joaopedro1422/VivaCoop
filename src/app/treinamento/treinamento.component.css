@@ -1,6 +1,6 @@
 /* Estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -17,6 +17,7 @@ body {
     color: #3366ff;
     font-size: 26px;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .linha-azul {
@@ -32,6 +33,8 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
     line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
   }
   
   .subtitulo {
@@ -40,6 +43,7 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
   }
   
   .lista-beneficios {
@@ -48,6 +52,7 @@ body {
     max-width: 600px;
     margin: auto;
     text-align: left;
+    font-family: 'Lato', sans-serif;
   }
   
   .lista-beneficios li {
@@ -81,5 +86,52 @@ body {
   .titulo-com-icone img {
     width: 40px;
     height: 40px;
+  }
+
+  /* Formulário */
+  .formulario-servico {
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .formulario-servico h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .formulario-servico form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario-servico input,
+  .formulario-servico select,
+  .formulario-servico textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .formulario-servico button {
+    padding: 10px;
+    background-color: #3366ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .formulario-servico button:hover {
+    background-color: #2c3e90;
   }
   

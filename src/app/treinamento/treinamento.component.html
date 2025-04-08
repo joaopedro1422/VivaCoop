@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treinamento | Cooperativa VIVA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="treinamento.component.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
       <h2>Treinamento</h2>
     </div>
 
-    <p style="text-align: justify;">
+    <p>
       Programas de capacitação voltados ao desenvolvimento de habilidades técnicas e comportamentais,
       promovendo a qualificação contínua dos cooperados e preparando-os para as demandas do mercado atual.
     </p>
@@ -31,12 +32,29 @@
     <ul class="lista-beneficios">
       <li>Selecione no formulário de serviços: Treinamento</li>
       <li>Envie sua solicitação preenchendo o formulário online</li>
-      <li>Cadastre-se no curso e participe das turmas disponíveis</li>
+      <li>Envie a solicitação</li>
+      <li>Aguarde a análise e retorno da equipe financeira</li>
     </ul>
 
     <div class="caso-sucesso">
       “Fiz o treinamento em logística e fui rapidamente realocado para uma nova oportunidade com melhor remuneração.” — Carlos D., sócio desde 2020.
     </div>
   </section>
+
+  <section class="formulario-servico">
+    <h2>Solicitação de Serviço</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="telefone" name="telefone" placeholder="Seu telefone" required>
+      <select name="servico" required>
+        <option value="">Selecione um serviço</option>
+        <option value="apoiofinanceiro">Treinamento</option>
+      </select>
+      <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
 </body>
 </html>
