@@ -56,11 +56,6 @@
 		cursor: pointer;
 		font-weight: bold;
 		transition: background-color 0.3s;
-  
-		&:hover {
-		  background-color: #256f55;
-		}
-  
 		&:disabled {
 		  background-color: #ccc;
 		  cursor: not-allowed;
