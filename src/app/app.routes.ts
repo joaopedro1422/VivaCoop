@@ -9,6 +9,8 @@ import { EventoComponent } from './evento/evento.component';
 import { NoticiaListaComponent } from './noticia-lista/noticia-lista.component';
 import { NoticiaDetalheComponent } from './noticia-detalhe/noticia-detalhe.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
+import { AreaColaboradorComponent } from './area-colaborador/area-colaborador.component';
 
 export const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +24,8 @@ export const routes: Routes = [
 	{ path: 'apoiofinanceiro', component: ApoioFinanceiroComponent },
 	{ path: 'noticia', component: NoticiaListaComponent },
 	{ path: 'noticia/:id', component: NoticiaDetalheComponent },
+	{ path: 'colaboradores', component: ColaboradoresComponent},
+	{ path: 'area-colaborador', component: AreaColaboradorComponent},
 
 
 ];

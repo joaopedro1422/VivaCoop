@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colaboradores - Cooperativa VIVA</title>
+  <link rel="stylesheet" href="colaboradores.component.css" />
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-content">
+        
+    </div>
+    <a (click)="rolarParaFormulario()" class="cta-botao">Quero ser colaborador</a>
+  </div>
+
+  <!-- Benefícios -->
+  <div class="section" id="beneficios">
+    <h2>Benefícios de ser Colaborador</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Participação nos Lucros</h3>
+        <p>Receba uma parte justa dos resultados da cooperativa ao final do ano.</p>
+      </div>
+      <div class="card">
+        <h3>Remuneração Superior</h3>
+        <p>Sem intermediários, você ganha mais e tem liberdade para gerir seus rendimentos.</p>
+      </div>
+      <div class="card">
+        <h3>Benefícios Sociais</h3>
+        <p>INSS, seguro de vida, convênios exclusivos e fundo cooperativo anual.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Como se tornar colaborador -->
+  <div class="section" id="como-se-tornar">
+    <h2>Como se tornar Colaborador</h2>
+    <div class="steps-sequencia">
+      <div class="step">
+        <h3>1. Preencha o Formulário</h3>
+        <p>Envie seus dados pelo formulário online ou presencial.</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <h3>2. Reunião Inicial</h3>
+        <p>Nossa equipe entra em contato para uma conversa sobre a proposta.</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <h3>3. Integração</h3>
+        <p>Após aprovação, participe da reunião de boas-vindas e comece a atuar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portal do colaborador -->
+  <div class="section" id="area-do-colaborador">
+    <h2>Área do Colaborador</h2>
+    <p>Acesse seu portal exclusivo com documentos, relatórios, atualizações e recursos da cooperativa.</p>
+    <div class="portal-buttons">
+      <a href="http://localhost:4200/area-colaborador">Acessar Portal</a>
+    </div>
+  </div>
+
+<!-- Card do formulário de interesse -->
+<div class="section" id="formulario-colaborador" #formulario>
+    <h3>Formulário de Interesse</h3>
+    <form action="#" method="post" class="form-card">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="area">Área de Interesse</label>
+        <select id="area" name="area" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="educacao">Educação</option>
+          <option value="consultoria">Consultoria</option>
+          <option value="apoio">Apoio Financeiro</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte um pouco sobre você..."></textarea>
+      </div>
+  
+      <button type="submit" class="botao-enviar">Enviar</button>
+    </form>
+  </div>
+  
+  <script>
+    function rolarParaFormulario() {
+      const formulario = document.getElementById("formulario-colaborador");
+      if (formulario) {
+        formulario.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  </script>
+
+</body>
+</html>
