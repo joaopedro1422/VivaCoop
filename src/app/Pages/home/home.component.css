@@ -1,0 +1,332 @@
+.body-home{
+    width: 100%;
+
+}
+
+.content-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-inicial img{
+    height: 100%;
+    width: 100vh;
+}
+.servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+.title h2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;color: rgb(0, 0, 206);
+}
+.title p{
+    margin-top: -20px;
+    color: gray
+}
+.title .line{
+    height: 3px;
+    width: 300px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 100px;
+}
+.card-servico{
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.card-servico:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 20px rgba(201, 201, 201, 0.2);
+    cursor: pointer;
+}
+.back-img{
+    background-color: #3458FF ;
+    height: 190px;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+.back-img img{
+    height: 110px;
+    width: auto;
+}
+.card-content h4{
+    font-size: 1.9rem;
+    color: rgb(0, 0, 206);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 9px;
+}
+.card-content p{
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+}
+.card-servico .card-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.servicos .content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.btn-saibamais{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn-saibamais button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 209, 209);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-saibamais button:hover{
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue
+}
+.centraliza{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quemsomos{
+    width: 98%;
+    max-width: 1300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #3458FF ;
+}
+
+.content-quemsomos{
+    display: flex;
+    border-radius: 20px;
+   
+}
+.content-quemsomos img{
+    max-height: 100%;
+    max-width: 590px;
+    border-radius: 0px 20px 20px 0px;
+}
+.content-text{
+    background-color: #3458FF ;
+    padding-left: 50px;
+    padding-right: 60px;
+    border-radius: 20px;
+    max-width: 650px;
+    padding-bottom: 15px;
+}
+.content-text h5{
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 2.4vw);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.content-text p{
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 0.8rem);
+}
+.content-text button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 209, 209);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.content-quemsomos img{
+    height: 100%;
+    width: auto;
+}
+.blog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.blog button{
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 209, 209);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.blog button:hover{
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue
+}
+.title button{
+    margin-top: 0px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 209, 209);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.title button:hover{
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue
+}
+
+button:hover{
+    cursor: pointer;
+}
+.blog-content{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+
+}
+
+.news-card {
+	display: flex;
+	flex-direction: column; 
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.2s;
+	overflow: hidden; 
+	aspect-ratio: 1 / 1; 
+    width: 320px;
+  }
+  
+  .news-card:hover {
+	transform: scale(1.02); 
+  }
+  
+  .news-card img {
+	width: 100%;
+	height: 50%; 
+	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+  }
+  
+  .news-content {
+	padding: 15px;
+	flex: 1; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+  }
+  
+  .news-content h3 {
+	font-size: 16px;
+	margin: 0 0 5px;
+	color: #333;
+	line-height: 1.2;
+  }
+  
+  .news-content p {
+	font-size: 12px;
+	color: #666;
+	margin: 0 0 10px;
+	line-height: 1.4;
+	flex-grow: 1; 
+  }
+  
+  .continue-reading {
+	color: #007bff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	align-self: flex-start;
+  }
+  
+  .continue-reading:hover {
+	text-decoration: underline;
+  }
+
+  .depoimentos{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-depoimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 40px;
+    row-gap: 15px;
+  }
+  .card-depoimento{
+    display: flex;
+  
+    width: 600px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 12px;
+    padding: 7px;
+  }
+  .card-depoimento img{
+    height: 110px;
+    width: auto;
+    border-radius: 100%;
+  }
+  .text-depoimento{
+    padding-left: 12px;
+  }
+  .text-depoimento p{
+    font-size: 14px;
+    color: #3f3f3f;
+  }
+  .alignEnd{
+    padding-right: 15px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .alignEnd span{
+    font-weight: bold;
+    color: rgb(0, 0, 170);
+  }

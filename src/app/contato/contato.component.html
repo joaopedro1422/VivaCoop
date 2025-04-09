@@ -1,0 +1,53 @@
+<!-- contato.component.html -->
+<div class="contato-container">
+	<h1 class="titulo">Fale Conosco</h1>
+  
+	<form [formGroup]="contatoForm" (ngSubmit)="enviarMensagem()" class="formulario-contato">
+		<label for="nome">Nome</label>
+		<input type="text" formControlName="nome" placeholder="Nome" required />
+		<label for="nome">Email</label>
+		<input type="email" formControlName="email" placeholder="E-mail" required />
+		<label for="nome">Telefone</label>
+		<input type="tel" formControlName="telefone" placeholder="Telefone" />
+		<label for="nome">Assunto</label>
+		<select formControlName="assunto" required>
+			<option value="" disabled selected hidden>Selecione um assunto</option>
+			<option>Informações Gerais</option>
+			<option>Dúvidas</option>
+			<option>Sugestões</option>
+			<option>Reclamações</option>
+			<option>Elogios</option>
+			<option>Trabalhe Conosco</option>
+			<option>Parcerias</option>
+			<option>Imprensa</option>
+			<option>Outro Assunto</option>
+		</select>
+		<label for="nome">Mensagem</label>
+	  <textarea formControlName="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+	  <button type="submit" [disabled]="contatoForm.invalid">Enviar</button>
+	</form>
+  
+	<div class="info-contato">
+	  <h2>Informações de Contato</h2>
+	  <p><strong>Endereço</strong> Rua Exemplo, 123 - Centro, Cidade/UF</p>
+	  <p><strong>Atendimento ao Cliente</strong> atendimento&#64;vivacooperativa.com.br</p>
+	  <p><strong>Suporte Técnico</strong> suporte&#64;vivacooperativa.com.br</p>
+	  <p><strong>Recursos Humanos</strong> trabalheconosco&#64;vivacooperativa.com.br</p>
+	  <p><strong>Financeiro</strong> financeiro&#64;vivacooperativa.com.br</p>
+	  <p><strong>Marketing e Comunicação</strong> imprensa&#64;vivacooperativa.com.br</p>
+	  <p><strong>Ouvidoria</strong> ouvidoria&#64;vivacooperativa.com.br</p>
+	  <p><strong>Propostas e Parcerias</strong> parcerias&#64;vivacooperativa.com.br</p>
+	</div>
+  
+	<div class="mapa">
+	  <iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.808027956493!2d-46.57732078538445!3d-23.506951665348594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5edb87559a77%3A0x39513f0f227b5662!2sEndere%C3%A7o%20Exemplo!5e0!3m2!1spt-BR!2sbr!4v1616762156431!5m2!1spt-BR!2sbr"
+		width="100%"
+		height="500"
+		style="border:0;"
+		allowfullscreen=""
+		loading="lazy">
+	  </iframe>
+	</div>
+  </div>
+  

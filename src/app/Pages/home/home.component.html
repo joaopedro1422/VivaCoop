@@ -1,1 +1,162 @@
-<h2>NATÃ LINDO</h2>
+<div class="body-home">
+    <div class="content-home">
+      
+            <img src="assets/imagens/banner-home.png" alt="">
+     
+        <div class="servicos">
+            <div class="title">
+                <h2>Onde atuamos</h2>
+                <p>Confira os serviços que disponibilizamos para ajudar você a alcançar seus objetivos com eficiência, qualidade e o suporte que você merece.</p>
+                <div class="line"></div>
+            </div>
+            <div class="content">
+                <div class="card-servico">
+                    <div class="back-img">
+                        <img src="assets/imagens/educacao1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Educação</h4>
+                        <p>Oferecemos programas voltados para diferentes faixas etárias, desde a educação infantil até cursos de capa- citação para adultos, sempre com foco na construção do conhecimento de forma colaborativa e significativa. </p>
+                    </div>
+                </div>
+                <div class="card-servico">
+                    <div class="back-img">
+                        <img src="assets/imagens/consultor1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Consultoria</h4>
+                        <p>Oferecemos programas voltados para diferentes faixas etárias, desde a educação infantil até cursos de capa- citação para adultos, sempre com foco na construção do conhecimento de forma colaborativa e significativa. = </p>
+                    </div>
+                </div>
+                <div class="card-servico">
+                    <div class="back-img">
+                        <img src="assets/imagens/risco1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Apoio Financeiro</h4>
+                        <p>Oferecemos programas voltados para diferentes faixas etárias, desde a educação infantil até cursos de capa- citação para adultos, sempre com foco na construção do conhecimento de forma colaborativa e significativa.  </p>
+                    </div>
+                </div>
+                <div class="card-servico">
+                    <div class="back-img">
+                        <img src="assets/imagens/treinamento 1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Treinamento</h4>
+                        <p>Oferecemos programas voltados para diferentes faixas etárias, desde a educação infantil até cursos de capa- citação para adultos, sempre com foco na construção do conhecimento de forma colaborativa e significativa.  </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-saibamais">
+                <button>SAIBA MAIS</button>
+            </div>
+        </div>
+        <div class="centraliza">
+            <div class="quemsomos">
+                <div class="content-quemsomos">
+                    <div class="content-text">
+                        <h5>Sobre nós</h5>
+                        <p>Somos uma cooperativa formada por pessoas que acreditam na força do trabalho coletivo, no compromisso com a qualidade e na valorização de cada profissional. Nascemos com o propósito de criar oportunidades mais justas e transparentes, conectando cooperados a um modelo de trabalho onde todos saem ganhando.
+    
+                            Aqui, não há espaço para intermediários. Isso significa que nossos cooperados recebem uma remuneração mais justa, com liberdade para gerenciar seus rendimentos e planejar o futuro com mais segurança. Acreditamos que, quando cada um tem voz e participação ativa, os resultados são mais humanos, eficientes e duradouros.
+                            <br><br>
+                            Mais do que trabalho, oferecemos cuidado e proteção. Nossos cooperados contam com benefícios como contribuição ao INSS, seguro de vida e convênios que fazem a diferença no dia a dia.
+                            
+                            Acesse nossa página de serviços e veja como podemos caminhar juntos rumo aos seus objetivos. <br><br>
+                            Nosso trabalho impacta diretamente a vida de centenas de famílias, gerando renda, dignidade e novas possibilidades. Acreditamos no poder da cooperação e nos esforçamos diariamente para criar soluções inovadoras, humanas e eficientes para atender às demandas de nossos parceiros e da sociedade.
+                    </p>
+                        <button>Conheça-nos Melhor</button>
+                    </div>
+                    <img src="assets/imagens/foto-quemsomos.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      
+        <div class="blog">
+            <div class="title">
+                <h2>Artigos e Notícias</h2>
+                <p>Confira o nosso Blog e fique por dentro de tudo que acontece no Ecossistema VIVA.</p>
+                <div class="line"></div>
+            </div>
+            <div class="blog-content">
+                <div class="news-card" *ngFor="let news of newsList.slice(0, 4)" [routerLink]="['/noticia', news.id]">
+                    <img [src]="news.image" alt="News Image">
+                    <div class="news-content">
+                      <h3>{{ news.title }}</h3>
+                      <p>{{ news.excerpt }}</p>
+                      <span class="continue-reading">Continue lendo →</span>
+                    </div>
+                  </div>
+            </div>
+            <button>Visite o nosso Blog</button>
+        </div>
+        <div class="depoimentos">
+            <div class="title">
+                <h2>Depoimentos</h2>
+                <p>Experiências dos parceiros VIVA.</p>
+                <div class="line"></div>
+            </div>
+            <div class="content-depoimentos">
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa1.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>"Desde que me tornei cooperado, minha vida profissional mudou para melhor. Antes, eu dependia de intermediários que ficavam com parte do meu pagamento, mas agora sou dono do meu próprio trabalho."</p>
+                        <div class="alignEnd">
+                            <span>- Carla Diaz</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa2.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>“Minha realidade mudou completamente com a cooperativa. Passei a ter voz ativa, autonomia para escolher meus trabalhos e, o mais importante, passei a ser valorizado como profissional. A diferença no meu dia a dia é imensa.”</p>
+                        <div class="alignEnd">
+                            <span>- Pedro Ferraz</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa3.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>“Antes de fazer parte da cooperativa, eu não tinha controle sobre minha rotina nem sobre meus rendimentos. Hoje, além de receber de forma mais justa, tenho acesso a benefícios como INSS e seguro de vida, o que trouxe muito mais estabilidade para mim e minha família.”</p>
+                        <div class="alignEnd">
+                            <span>- José Augusto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa4.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>“Desde que entrei para a cooperativa, passei a enxergar minha profissão com outros olhos. Antes, boa parte do que eu ganhava ficava nas mãos de intermediários. Hoje, sou dono do meu trabalho, recebo de forma justa e ainda tenho acesso a benefícios que antes pareciam impossíveis.”</p>
+                        <div class="alignEnd">
+                            <span>- Felipe Gomes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa5.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>“Trabalhar por conta própria era um desafio constante. Com a cooperativa, encontrei apoio, estrutura e justiça na remuneração. Me sinto parte de algo maior, que reconhece meu esforço e me ajuda a crescer profissionalmente.”</p>
+                        <div class="alignEnd">
+                            <span>- Alex Silva</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <img src="assets/imagens/pessoa6.jpg" alt="">
+                    <div class="text-depoimento">
+                        <p>“Na cooperativa, encontrei mais do que trabalho: encontrei dignidade. Hoje sei que o que produzo volta diretamente pra mim, sem cortes ou abusos. Isso me deu segurança, motivação e orgulho de ser quem sou.”</p>
+                        <div class="alignEnd">
+                            <span>- Eduarda Monteiro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <h2>Dúvidas ?</h2>
+                <button>Entre em Contato</button>
+            </div>
+        </div>
+    </div>
+</div>
