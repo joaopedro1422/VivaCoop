@@ -11,6 +11,7 @@ import { NoticiaDetalheComponent } from './noticia-detalhe/noticia-detalhe.compo
 import { HomeComponent } from './Pages/home/home.component';
 
 export const routes: Routes = [
+	{ path: '', redirectTo: 'home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
 	{ path: 'contato', component: ContatoComponent },
 	{ path: 'evento', component: EventoComponent },
