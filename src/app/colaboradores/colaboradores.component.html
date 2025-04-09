@@ -85,13 +85,24 @@
       </div>
   
       <div class="form-group">
-        <label for="area">Área de Interesse</label>
+        <label for="area">Tipo de vaga</label>
+        <select id="tipo" name="tipo" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="efetivo">Efetivo</option>
+          <option value="estagio">Estágio</option>
+          <option value="temporario">Temporário</option>
+          <option value="treinee">Treinee</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="area">Área da vaga</label>
         <select id="area" name="area" required>
           <option value="" disabled selected>Selecione</option>
           <option value="educacao">Educação</option>
           <option value="consultoria">Consultoria</option>
-          <option value="apoio">Apoio Financeiro</option>
-          <option value="outros">Outros</option>
+          <option value="apoio financeiro">Apoio Financeiro</option>
+          <option value="treinamento">Treinamento</option>
         </select>
       </div>
   
