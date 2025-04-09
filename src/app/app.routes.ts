@@ -8,9 +8,10 @@ import { ApoioFinanceiroComponent} from './apoio-financeiro/apoio-financeiro.com
 import { EventoComponent } from './evento/evento.component';
 import { NoticiaListaComponent } from './noticia-lista/noticia-lista.component';
 import { NoticiaDetalheComponent } from './noticia-detalhe/noticia-detalhe.component';
-
+import { HomeComponent } from './Pages/home/home.component';
 
 export const routes: Routes = [
+   { path: 'home', component: HomeComponent },
 	{ path: 'contato', component: ContatoComponent },
 	{ path: 'evento', component: EventoComponent },
 	{ path: 'servicos', component: ServicosComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
 	{ path: 'apoiofinanceiro', component: ApoioFinanceiroComponent },
 	{ path: 'noticia', component: NoticiaListaComponent },
 	{ path: 'noticia/:id', component: NoticiaDetalheComponent },
+
 
 ];
