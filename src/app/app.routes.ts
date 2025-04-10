@@ -11,10 +11,11 @@ import { NoticiaDetalheComponent } from './noticia-detalhe/noticia-detalhe.compo
 import { HomeComponent } from './Pages/home/home.component';
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 import { AreaColaboradorComponent } from './area-colaborador/area-colaborador.component';
-
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 export const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
+   { path: 'sobre', component: SobreNosComponent },
 	{ path: 'contato', component: ContatoComponent },
 	{ path: 'evento', component: EventoComponent },
 	{ path: 'servicos', component: ServicosComponent },
