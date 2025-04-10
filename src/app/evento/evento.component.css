@@ -32,7 +32,7 @@ main {
 .evento {
 	background-color: #f4f4f4;
 	color: #2c3e50;
-	padding: 15px;
+	padding-top: 0px;
 	border-radius: 8px;
 	aspect-ratio: 1 / 1;
 	display: flex;
@@ -41,6 +41,14 @@ main {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	text-align: left;
   }
+
+  .logo-evento {
+	width: 100%;
+	height: 40%; 
+	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
 
 .eventos-grid {
 	display: grid;
