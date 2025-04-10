@@ -30,20 +30,16 @@ body {
     bottom: 80px;
     left: 20%;
     transform: translateX(-50%);
-    background-color: #3366ff;
+	width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 17, 255);
     color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .cta-botao:hover {
-    background-color: #e0e0e0;
+    font-weight: 600;
+    font-size: 16px;
+	cursor: pointer;
   }
 
   .banner-content {
@@ -147,17 +143,17 @@ body {
     margin-top: 20px;
   }
   
-  .portal-buttons a {
-    text-decoration: none;
-    background-color: #3366ff;
+  .portal-buttons button {
+	width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 17, 255);
     color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .portal-buttons a:hover {
-    background-color:#203acc;
+    font-weight: 600;
+    font-size: 16px;
+	cursor: pointer;
   }
   
   @media (max-width: 768px) {
@@ -206,20 +202,16 @@ body {
   }
 
   .botao-enviar {
-    width: fit-content;
-    background-color: #3366ff;
-    color: white;
     padding: 10px 22px;
-    border-radius: 6px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+	width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 17, 255);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+	cursor: pointer;
   }
-
-  .botao-enviar:hover {
-    background-color: #203acc;
-  }
-
-  
