@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcerias - Cooperativa VIVA</title>
+  <link rel="stylesheet" href="parcerias.component.css" />
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <a (click)="rolarParaFormulario()" class="cta-botao">Quero ser parceiro</a>
+  </div>
+
+  <!-- Parcerias Atuais -->
+  <div class="section">
+    <h2>Parcerias Atuais</h2>
+    <div class="partners-logos">
+      <img src="/assets/imagens/aurora.png" alt="Cooperativa Solaris" />
+      <img src="/assets/imagens/coop_drogaria.png" alt="Instituto Progredir" />
+      <img src="/assets/imagens/frimesa.png" alt="Fundo Social BR" />
+      <img src="/assets/imagens/sicoob.jpg" alt="Fundo Social BR" />
+      <img src="/assets/imagens/banco-Sicredi.jpg" alt="Fundo Social BR" />
+    </div>
+  </div>
+
+  <!-- Como Parceria Pode Ajudar -->
+  <div class="section">
+    <h2>Como a Parceria Pode Ajudar</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Impacto Social Conjunto</h3>
+        <p>Unindo forças para potencializar ações transformadoras.</p>
+      </div>
+      <div class="card">
+        <h3>Profissionais Comprometidos</h3>
+        <p>Trabalhos realizados por sócios que são também os donos da cooperativa.</p>
+      </div>
+      <div class="card">
+        <h3>Gestão Transparente</h3>
+        <p>Controle democrático e ético dos projetos desenvolvidos.</p>
+      </div>
+      <div class="card">
+        <h3>Redução de Custos</h3>
+        <p>Eliminação de intermediários com maior retorno sobre o investimento social.</p>
+      </div>
+      <div class="card">
+        <h3>Alcance Nacional</h3>
+        <p>Rede crescente de cooperados em diversas regiões do país.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulário de Parcerias -->
+  <div class="section" id="formulario-parcerias" #formulario>
+    <h3>Formulário de Contato para Parcerias</h3>
+    <form action="#" method="post" class="form-card">
+      <div class="form-group">
+        <label for="nome">Nome da Empresa / Instituição</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
+
+      <div class="form-group">
+        <label for="responsavel">Responsável</label>
+        <input type="text" id="responsavel" name="responsavel" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="area-interesse">Área de Interesse</label>
+        <select id="area-interesse" name="area-interesse" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="educacao">Educação</option>
+          <option value="consultoria">Consultoria</option>
+          <option value="apoio-financeiro">Apoio Financeiro</option>
+          <option value="treinamento">Treinamento</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva sua proposta de parceria..."></textarea>
+      </div>
+
+      <button type="submit" class="botao-enviar">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    function rolarParaFormulario() {
+      const formulario = document.getElementById("formulario-parcerias");
+      if (formulario) {
+        formulario.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  </script>
+
+</body>
+</html>
+
