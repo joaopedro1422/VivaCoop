@@ -330,3 +330,36 @@ button:hover{
     font-weight: bold;
     color: rgb(0, 0, 170);
   }
+  .colaborador{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .colaborador-content{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+  }
+  .colaborador-content img{
+    max-width: 800px;
+  }
+  .text-colaborador h4{
+    color: rgb(0, 0, 197);
+    font-size: 1.1rem;
+  }
+  .text-colaborador p{
+    font-size: 0.9rem;
+  }
+  .text-colaborador button{
+    margin-top: 0px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 17, 255);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }

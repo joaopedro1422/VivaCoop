@@ -1,4 +1,12 @@
+<div class="body-blog">
+	<div class="title">
+		<h2>Blog <span style="color:rgb(0, 217, 255)">VIVA</span></h2>
+		<p>Fique por dentro de tudo que acontece.</p>
+		<div class="line"></div>
+	</div>
+</div>
 <div class="news-container">
+	
 	<div class="news-card" *ngFor="let news of newsList" [routerLink]="['/noticia', news.id]">
 	  <img [src]="news.image" alt="News Image">
 	  <div class="news-content">
