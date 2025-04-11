@@ -24,13 +24,12 @@ body {
     background-repeat: no-repeat;
   }
   
-  
   .cta-botao {
     position: absolute;
     bottom: 80px;
     left: 20%;
     transform: translateX(-50%);
-	width: 250px;
+	  width: 250px;
     height: 40px;
     margin-top: 20px;
     border: none;
@@ -39,7 +38,7 @@ body {
     color: white;
     font-weight: 600;
     font-size: 16px;
-	cursor: pointer;
+	  cursor: pointer;
   }
   
   .section {
