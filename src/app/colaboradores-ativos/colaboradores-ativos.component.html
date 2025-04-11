@@ -1,0 +1,17 @@
+<div class="colaboradores-lista">
+    <h3>Colaboradores Ativos</h3>
+  
+    <div class="colaboradores-grid">
+      <div *ngFor="let colaborador of colaboradores" class="colaborador-card">
+        <img [src]="colaborador.fotoUrl" alt="{{ colaborador.nome }}" />
+        <h4>{{ colaborador.nome }}</h4>
+        <p>{{ colaborador.area }}</p>
+        <p>{{ colaborador.descricao }}</p>
+  
+        <button (click)="removerColaborador(colaborador.nome)" class="remover-botao">
+          ❌ Remover
+        </button>
+      </div>
+    </div>
+  </div>
+  

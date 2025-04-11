@@ -1,48 +1,99 @@
 .dashboard {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dashboard h2 {
-    text-align: center;
-    color: #3366ff;
-    font-size: 32px;
-  }
-  
-  .intro {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    text-decoration: none;
-    color: #3366ff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-  }
-  
-  .card:hover {
-    background-color: #e0f7df;
-    transform: scale(1.03);
-  }
-  
+  padding: 2rem;
+  font-family:'Raleway', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.colaboradores-lista h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.colaboradores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.colaborador-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.colaborador-card img {
+  width: 100%;
+  max-width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.colaborador-card h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0.3rem;
+  color: #444;
+}
+
+.colaborador-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.remover-botao {
+  margin-top: 0.7rem;
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remover-botao:hover {
+  background-color: #c0392b;
+}

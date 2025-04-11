@@ -16,6 +16,22 @@
     <a (click)="rolarParaFormulario()" class="cta-botao">Quero ser colaborador</a>
   </div>
 
+
+  <!-- Lista de Colaboradores -->
+  <div class="section colaboradores-lista">
+    <h2>Nossos Colaboradores</h2>
+    <div class="colaboradores-grid">
+      <div class="colaborador-card" *ngFor="let colaborador of colaboradores">
+        <img [src]="colaborador.fotoUrl" alt="Foto de {{colaborador.nome}}" />
+        <h3>{{ colaborador.nome }}</h3>
+        <p>{{ colaborador.area }}</p>
+        <p>{{ colaborador.descricao }}</p>
+        <a *ngIf="colaborador.linkedin" [href]="colaborador.linkedin" target="_blank">Ver Linkedin</a>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Benefícios -->
   <div class="section" id="beneficios">
     <h2>Benefícios de ser Colaborador</h2>

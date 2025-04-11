@@ -1,0 +1,68 @@
+.colaboradores-lista {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .colaboradores-lista h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .colaboradores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .colaborador-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .colaborador-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .colaborador-card img {
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+  }
+  .colaborador-card h4 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.25rem;
+    color: #34495e;
+  }
+  
+  .colaborador-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.25rem 0;
+  }
+  
+  .remover-botao {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .remover-botao:hover {
+    background-color: #c0392b;
+  }
+  
