@@ -1,18 +1,70 @@
 <div class="body-blog">
-	<div class="title">
-		<h2>Blog <span style="color:rgb(0, 217, 255)">VIVA</span></h2>
-		<p>Fique por dentro de tudo que acontece.</p>
-		<div class="line"></div>
-	</div>
-</div>
-<div class="news-container">
-	
-	<div class="news-card" *ngFor="let news of newsList" [routerLink]="['/noticia', news.id]">
-	  <img [src]="news.image" alt="News Image">
-	  <div class="news-content">
-		<h3>{{ news.title }}</h3>
-		<p>{{ news.excerpt }}</p>
-		<span class="continue-reading">Continue lendo →</span>
-	  </div>
-	</div>
+  <div class="title">
+    <h2>Blog <span style="color:rgb(0, 217, 255)">VIVA</span></h2>
+    <p>Fique por dentro de tudo que acontece.</p>
+    <div class="line"></div>
   </div>
+  <!-- Botão para adicionar notícia -->
+  <button class="cta-botao" (click)="toggleForm()">Adicionar Notícia</button>
+</div>
+
+<!-- Formulário para adicionar notícia -->
+<div class="news-form" *ngIf="showForm">
+  <h3>Adicionar Nova Notícia</h3>
+  <form (ngSubmit)="addNews()">
+    <div class="form-group">
+      <label for="title">Título:</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="newNews.title"
+        name="title"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="excerpt">Resumo:</label>
+      <textarea
+        id="excerpt"
+        [(ngModel)]="newNews.excerpt"
+        name="excerpt"
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="content">Conteúdo:</label>
+      <textarea
+        id="content"
+        [(ngModel)]="newNews.content"
+        name="content"
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">URL da Imagem:</label>
+      <input
+        type="text"
+        id="image"
+        [(ngModel)]="newNews.image"
+        name="image"
+        required
+      />
+    </div>
+    <div class="form-actions">
+      <button type="submit" [disabled]="isSubmitting">Salvar</button>
+      <button type="button" (click)="toggleForm()" [disabled]="isSubmitting">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+<div class="news-container">
+  <!-- Lista de notícias -->
+  <div class="news-card" *ngFor="let news of newsList" [routerLink]="['/noticia', news.id]">
+    <img [src]="news.image" alt="News Image">
+    <div class="news-content">
+      <h3>{{ news.title }}</h3>
+      <p>{{ news.excerpt }}</p>
+      <span class="continue-reading">Continue lendo →</span>
+    </div>
+  </div>
+</div>
