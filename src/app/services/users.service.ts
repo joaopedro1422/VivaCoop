@@ -11,7 +11,7 @@ export interface User {
 })
 export class UsersService {
   private users: User[] = [
-    { id: 1, username: 'joao', password: '123', name: 'João Silva' },
+    { id: 1, username: 'adm', password: '123', name: 'João Silva' },
     { id: 2, username: 'maria', password: '456', name: 'Maria Souza' },
   ];
   constructor() { }
