@@ -8,8 +8,8 @@
   }
   
   .login-content {
-    background-color: #e2e2e2;
-
+    background-color: #fafafa;
+    border: 1px solid #3458FF;
     border-radius: 12px;
     display: flex;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);

@@ -9,10 +9,10 @@
   
   .login-content {
     display: flex;
-    background-color: #e2e2e2;
-   
+    background-color: #fafafa;
+    border: 1px solid #3458FF;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(114, 114, 114, 0.1);
+    box-shadow: 0 2px 8px rgba(150, 150, 150, 0.1);
     width: 100%;
     max-width: 850px; /* tamanho normal no desktop */
   }
