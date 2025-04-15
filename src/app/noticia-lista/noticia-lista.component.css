@@ -186,3 +186,25 @@ span {
   color: white;
   width: 200px;
 }
+
+@media (max-width: 768px) {
+	.news-container {
+	  flex-direction: column;
+	  align-items: center;
+	  grid-template-columns: repeat(1, 1fr);
+	}
+	.body-blog {
+		flex-direction: column;
+		align-items: center;
+	  }
+	
+	  .cta-botao {
+		align-items: center;
+		position: relative;
+		top: 0px;
+		left: 120px;
+	  }
+	.news-card {
+	  width: 90%; /* ocupar quase toda a largura da tela */
+	}
+  }
