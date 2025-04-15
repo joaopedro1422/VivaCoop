@@ -34,4 +34,36 @@ export class HeaderComponent  implements OnInit {
   redirectToBlog(){
     this.router.navigate(['/noticia']);
   }
+
+	navegarParaHome() {
+		this.router.navigate(['/home']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaSobre() {
+		this.router.navigate(['/sobre']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaServicos() {
+		this.router.navigate(['/servicos']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaColaboradores() {
+		this.router.navigate(['/colaboradores']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaParcerias() {
+		this.router.navigate(['/parcerias']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaNoticias() {
+		this.router.navigate(['/noticia']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaEventos() {
+		this.router.navigate(['/evento']).then(() => window.scrollTo(0, 0));
+	}
+
+	navegarParaContato() {
+		this.router.navigate(['/contato']).then(() => window.scrollTo(0, 0));
+	}
 }

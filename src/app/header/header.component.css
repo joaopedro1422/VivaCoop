@@ -71,6 +71,7 @@ transition: 1.1s
  
 .nav-menu ul li a:hover {
     text-decoration: underline;
+	cursor: pointer;
 }
 
 .login-container {
