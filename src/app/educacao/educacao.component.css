@@ -135,3 +135,6 @@ body {
     height: 40px;
   }
   
+  .formulario-servico textarea {
+	resize: none;
+  }

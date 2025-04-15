@@ -134,4 +134,6 @@ body {
   .formulario-servico button:hover {
     background-color: #2c3e90;
   }
-  
+  .formulario-servico textarea {
+	resize: none;
+  }

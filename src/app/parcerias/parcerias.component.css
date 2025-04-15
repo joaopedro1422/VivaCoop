@@ -127,6 +127,9 @@ body {
     margin-bottom: 5px;
     color: #333;
   }
+  .form-group textarea {
+	resize: none;
+  }
   
   .form-group input,
   .form-group select,
