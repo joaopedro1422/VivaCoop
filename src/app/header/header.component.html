@@ -1,3 +1,16 @@
+<div class="text-top" (click)="redirectToBlog()">
+    <div class="noticias-marquee">
+       
+        <a class="noticia" href="/noticia" *ngFor="let noticia of noticias">
+            {{ noticia.title }} &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+        </a>
+          <a class="noticia" href="/noticia" *ngFor="let noticia of noticias">
+            {{ noticia.title }} &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+          </a>
+      </div>
+</div>
     <header class="header">
         <div class="logo"><img src="assets/imagens/logo1.png" alt=""></div>
         <nav class="nav-menu">
