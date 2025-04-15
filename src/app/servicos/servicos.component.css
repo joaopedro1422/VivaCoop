@@ -60,7 +60,6 @@
   .servico:hover {
     transform: translateY(-8px);
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
   }
   
   /* Parte azul do card */
@@ -114,6 +113,9 @@
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
+  }
+  .servico-corpo button {
+	cursor: pointer;
   }
   
   .servico-corpo a:hover {
