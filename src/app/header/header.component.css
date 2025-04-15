@@ -126,3 +126,35 @@ transition: 1.1s
       transform: translateX(-20%);
     }
   }
+
+  @media (max-width: 768px) {
+	.header {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  padding: 15px;
+	}
+  
+	.nav-menu ul {
+	  flex-direction: column;
+	  width: 100%;
+	  margin-top: 10px;
+	}
+  
+	.nav-menu ul li {
+	  padding: 5px 0;
+	}
+  
+	.login-container {
+	  margin-top: 10px;
+	  flex-direction: row;
+	  align-items: flex-start;
+	}
+  
+	.login-text {
+	  text-align: left;
+	}
+  
+	.logo img {
+	  height: 40px;
+	}
+  }
