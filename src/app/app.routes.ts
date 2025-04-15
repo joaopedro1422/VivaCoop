@@ -15,10 +15,12 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { ParceriasComponent } from './parcerias/parcerias.component';
 import { AdicionarColaboradorComponent } from './adicionar-colaborador/adicionar-colaborador.component';
 import { ColaboradoresAtivosComponent } from './colaboradores-ativos/colaboradores-ativos.component';
-
+import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 
 export const routes: Routes = [
-	{ path: '', redirectTo: 'home', pathMatch: 'full' },
+	{ path: 'login', component: LoginComponent},
+	{ path: 'registro', component: RegistroComponent},
    { path: 'home', component: HomeComponent },
    { path: 'sobre', component: SobreNosComponent },
 	{ path: 'contato', component: ContatoComponent },
@@ -35,6 +37,8 @@ export const routes: Routes = [
 	{ path: 'parcerias', component: ParceriasComponent},
 	{ path: 'adicionar-colaborador', component: AdicionarColaboradorComponent},
 	{ path: 'colaboradores-ativos', component: ColaboradoresAtivosComponent},
+	{ path: '*', redirectTo: 'home', pathMatch: 'full' },
+	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 
 
 
