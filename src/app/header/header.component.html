@@ -1,5 +1,20 @@
-    <header class="header">
-        <div class="logo"><img src="assets/imagens/logo1.png" alt=""></div>
+<div class="text-top" (click)="redirectToBlog()">
+    <div class="noticias-marquee">
+       
+        <a class="noticia" href="/noticia" *ngFor="let noticia of noticias">
+            {{ noticia.title }} &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+        </a>
+          <a class="noticia" href="/noticia" *ngFor="let noticia of noticias">
+            {{ noticia.title }} &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+          </a>
+      </div>
+</div>
+<header class="header">
+  
+    <div class="logo"><img src="assets/imagens/logo1.png" alt=""></div>
+    <nav class="nav-menu">
         <nav class="nav-menu">
             <ul>
                 <li><a (click)="navegarParaHome()">Home</a></li>
@@ -12,12 +27,20 @@
                 <li><a (click)="navegarParaContato()" >Contato</a></li>
             </ul>
         </nav>
-        <div class="login-container">
-            <div class="logo"><img src="assets/imagens/usuario.png" alt=""></div>
-			<div class="login-text">
-				<span class="sign-in-title">Entre</span>
-				<span> <br> ou</span>
-				<span class="sign-up-title"> Cadastre-se</span>
-			</div>
-		  </div>
-    </header>
+    <div class="login-container">
+      <div class="logo"><img src="assets/imagens/usuario.png" alt=""></div>
+      <div class="login-text" *ngIf="!userName">
+        <a href="/login" style="text-decoration: none; color: white">
+          <span class="sign-in-title">Entre</span>
+          <span> <br> ou</span>
+          <span class="sign-up-title"> Cadastre-se</span>
+        </a>
+      </div>
+      <div class="login-text" *ngIf="userName">
+        <span class="sign-in-title">Olá, {{ userName }}!</span>
+        <button (click)="logout()" style="background-color: transparent; border: 1px solid white; color: white; padding: 4px 10px; border-radius: 5px; cursor: pointer; margin-left: 15px">
+            Sair
+          </button>
+      </div>
+    </div>
+  </header>
