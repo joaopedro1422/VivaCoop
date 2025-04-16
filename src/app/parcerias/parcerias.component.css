@@ -180,5 +180,20 @@ body {
     .parceiros-logos img {
       height: 60px;
     }
+
+    
+    .colaborador-card {
+      flex: 1 1 100%;
+    }
+    
+    .cta-botao {
+      position: static;
+      transform: none;
+      margin: 20px auto;
+      display: block;
+      width: 80%;
+      max-width: 250px;
+    }
+    
   }
   

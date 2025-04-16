@@ -41,6 +41,10 @@ body {
   cursor: pointer;
 }
 
+.cta-botao:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 .cta-botao:hover {
   background-color: #e0e0e0;
@@ -281,5 +285,14 @@ body {
 @media (max-width: 768px) {
   .colaborador-card {
     flex: 1 1 100%;
+  }
+
+  .cta-botao {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    max-width: 250px;
   }
 }
