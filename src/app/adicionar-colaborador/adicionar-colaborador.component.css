@@ -75,3 +75,10 @@
     cursor: not-allowed;
   }
   
+  input[type="file"] {
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 4px;
+  }
+  

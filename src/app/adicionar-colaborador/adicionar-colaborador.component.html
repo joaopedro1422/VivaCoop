@@ -41,15 +41,22 @@
       </div>
   
       <div class="form-group">
-        <label for="fotoUrl">URL da Foto</label>
+        <label for="foto">Foto do Colaborador</label>
         <input
-          id="fotoUrl"
-          type="text"
-          name="fotoUrl"
-          [(ngModel)]="novoColaborador.fotoUrl"
+          id="foto"
+          type="file"
+          name="foto"
+          (change)="onFileSelected($event)"
+          accept="image/*"
           required
         />
       </div>
+
+      <div *ngIf="novoColaborador.fotoUrl">
+        <p>Prévia da imagem:</p>
+        <img [src]="novoColaborador.fotoUrl" alt="Foto do colaborador" style="max-width: 200px; border-radius: 8px;" />
+      </div>
+      
   
       <div class="form-group">
         <label for="linkedin">Linkedin (opcional)</label>
