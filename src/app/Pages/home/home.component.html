@@ -79,17 +79,27 @@
                 <p>Confira o nosso Blog e fique por dentro de tudo que acontece no Ecossistema VIVA.</p>
                 <div class="line"></div>
             </div>
-            <div class="blog-content">
-                <div class="news-card" *ngFor="let news of newsList.slice(0, 4)" [routerLink]="['/noticia', news.id]">
-                    <img [src]="news.image" alt="News Image">
+            <div class="blog-carousel-wrapper">
+                <button class="arrow left" (click)="anterior()">‹</button>
+              
+                <div class="blog-content" #carouselContainer>
+                  <div
+                    class="news-card"
+                    *ngFor="let news of newsList.slice(0, 4)"
+                    [routerLink]="['/noticia', news.id]"
+                  >
+                    <img [src]="news.image" alt="News Image" />
                     <div class="news-content">
                       <h3>{{ news.title }}</h3>
                       <p>{{ news.excerpt }}</p>
                       <span class="continue-reading">Continue lendo →</span>
                     </div>
                   </div>
-            </div>
-			<button onclick="window.location.href='/noticia'">Visite o nosso Blog</button>
+                </div>
+              
+                <button class="arrow right" (click)="proximo()">›</button>
+              </div>
+			<button class="btn" onclick="window.location.href='/noticia'">Visite o nosso Blog</button>
         </div>
         <div class="colaborador">
             <div class="colaborador-content">
