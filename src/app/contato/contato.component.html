@@ -1,6 +1,12 @@
 <!-- contato.component.html -->
 <div class="contato-container">
 	<h1 class="titulo">Fale Conosco</h1>
+	<div *ngIf="alerta.visivel" class="alerta" [class]="'alerta-' + alerta.tipo">
+		<div class="alerta-conteudo">
+		  <span>{{ alerta.mensagem }}</span>
+		  <button class="alerta-fechar" (click)="fecharAlerta()">×</button>
+		</div>
+	  </div>
   
 	<form [formGroup]="contatoForm" (ngSubmit)="enviarMensagem()" class="formulario-contato">
 		<label for="nome">Nome</label>
@@ -24,7 +30,10 @@
 		</select>
 		<label for="nome">Mensagem</label>
 	  <textarea formControlName="mensagem" placeholder="Mensagem" rows="5" required></textarea>
-	  <button type="submit" [disabled]="contatoForm.invalid">Enviar</button>
+	  <button type="submit">Enviar</button>
+	  <div *ngIf="contatoForm.invalid && contatoForm.touched" class="mensagem-erro-geral">
+		  <p>⚠️ Por favor, preencha todos os campos corretamente antes de enviar.</p>
+		</div>
 	</form>
   
 	<div class="info-contato">

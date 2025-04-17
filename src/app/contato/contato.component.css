@@ -97,6 +97,15 @@
 	  overflow: hidden;
 	}
   }  
+  .mensagem-erro-geral {
+	color: #c0392b;
+	background-color: #fdecea;
+	border: 1px solid #e74c3c;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 0.95em;
+}
   @media (max-width: 768px) {
 	.contato-container {
 	  .info-contato {
@@ -124,3 +133,52 @@
 	}
   }
   
+  .alerta {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	min-width: 300px;
+	max-width: 600px;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .alerta-conteudo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .alerta-sucesso {
+	background-color: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+  }
+  
+  .alerta-erro {
+	background-color: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+  }
+  
+  .alerta-info {
+	background-color: #d1ecf1;
+	border: 1px solid #bee5eb;
+	color: #0c5460;
+  }
+  
+  .alerta-fechar {
+	background: none;
+	border: none;
+	color: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 10px;
+	width: auto;
+	height: auto;
+  }
