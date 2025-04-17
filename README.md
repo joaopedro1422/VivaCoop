@@ -1,8 +1,15 @@
 # VivaCoop
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+A cooperativa VIVA, é uma forma legal de trabalho, associação autônoma de pessoas que se unem voluntariamente para atender às suas necessidades e aspirações econômicas, sociais e culturais, comuns por meio de uma empresa de propriedade conjuntas e
+democraticamente controlada.
 
-## Development server
+Atua junto aos seus clientes somente através de seus sócios, o que significa num auto comprometimento diante do tomador de serviço, pois justamente os próprios donos são os responsáveis na execução das atividades.
+
+Por ser sócio, aufere uma remuneração superior, não apenas pela eliminação do intermediador, mas pela oportunidade que tem de gerir os seus próprios rendimentos, recolhimento do INSS, seguro de vida e convênios. Também conta com um fundo cooperativo, uma reserva financeira programada para ser usada ao final de cada ano.
+
+📑 [Clique aqui para ver o relatório em PDF](Projeto 1 - Especificação - Cooperativa.pdf)
+
+##
 
 To start a local development server, run:
 
