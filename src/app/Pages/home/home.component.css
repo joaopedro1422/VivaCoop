@@ -44,6 +44,8 @@
     background-color: rgb(0, 0, 255);
     border-radius: 100px;
 }
+
+
 .card-servico{
     border: 1px solid rgb(206, 206, 206);
     border-radius: 10px;
@@ -84,11 +86,24 @@
     padding-right: 20px;
 }
 
-.servicos .content{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 14px;
+.servicos .content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 14px;
+}
+
+@media (max-width: 992px) {
+  .servicos .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .servicos .content {
+    grid-template-columns: 1fr;
+  }
 }
 
 .btn-saibamais{
@@ -176,7 +191,7 @@
     align-items: center;
   
 }
-.blog button{
+.blog .btn{
     margin-top: 30px;
     width: 250px;
     height: 40px;
@@ -206,9 +221,12 @@ button:hover{
 .blog-content{
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
 
+}
+.arrow {
+  display: none;
 }
 
 .news-card {
@@ -287,6 +305,12 @@ button:hover{
     column-gap: 40px;
     row-gap: 15px;
   }
+  @media (max-width: 768px) {
+    .content-depoimentos {
+      grid-template-columns: 1fr; 
+    }
+    
+  }
   .card-depoimento{
     display: flex;
   
@@ -299,6 +323,21 @@ button:hover{
     height: 110px;
     width: auto;
     border-radius: 100%;
+  }
+  @media (max-width: 768px) {
+    .card-depoimento{
+      display: flex;
+    
+      width: 320px;
+      border: 1px solid rgb(218, 218, 218);
+      border-radius: 12px;
+      padding: 7px;
+    }
+    .card-depoimento img{
+      height: 50px;
+      margin-top: 16px;
+    }
+    
   }
   .text-depoimento{
     padding-left: 12px;
@@ -329,6 +368,15 @@ button:hover{
     justify-content: center;
     max-width: 1200px;
   }
+  @media (max-width: 768px) {
+    .colaborador-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 350px;
+    }
+    
+  }
   .colaborador-content img{
     max-width: 800px;
   }
@@ -350,3 +398,132 @@ button:hover{
     font-weight: 600;
     font-size: 16px;
   }
+  @media (max-width: 768px) {
+    .body-home{
+      max-width: 100%;
+  
+  }
+  .servicos{
+    max-width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .title h2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;color: rgb(0, 0, 206);
+  }
+  .title p{
+    margin-top: -20px;
+    color: gray;
+    font-size: 0.6rem
+  }
+  .title .line{
+    height: 3px;
+    width: 200px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 100px;
+  }
+    .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .content-quemsomos{
+    display: flex;
+    flex-direction: column-reverse;
+  
+  }
+  .content-quemsomos{
+    width: 100%;
+  }
+  .content-text{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .content-quemsomos img{
+    max-height: 100%;
+    max-width: 590px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .centraliza{
+    
+  }
+  .blog-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .blog-content {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .news-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .arrow.left {
+    left: 0;
+  }
+
+  .arrow.right {
+    right: 0;
+  }
+  .news-card {
+    width: 60px;
+    min-width: 100%;
+    aspect-ratio: auto;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .news-card img {
+    height: 200px; /* ajustável dependendo da proporção desejada */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+  }
+
+  .news-content h3 {
+    font-size: 18px;
+  }
+
+  .news-content p {
+    font-size: 14px;
+  }
+
+  .continue-reading {
+    font-size: 14px;
+  }
+}

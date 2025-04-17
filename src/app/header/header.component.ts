@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent  implements OnInit {
   userName: string | null = null;
   noticias: News[] = [];
+  menuAberto = false;
   constructor(private authService: AutenticacaoService,  private router: Router, private newsService: NoticiaService) {}
   ngOnInit(): void {
     this.authService.loggedInUser$.subscribe((user) => {
@@ -24,6 +25,9 @@ export class HeaderComponent  implements OnInit {
       console.log('Notícias recebidas:', news); 
 			this.noticias = news;
 		});
+  }
+  toggleMenu() {
+	this.menuAberto = !this.menuAberto;
   }
   
   logout() {

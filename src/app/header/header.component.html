@@ -13,33 +13,38 @@
 </div>
 <header class="header">
   
+    <div class="menu-toggle" (click)="toggleMenu()">
+      &#9776;
+    </div>
     <div class="logo"><img src="assets/imagens/logo1.png" alt=""></div>
-    <nav class="nav-menu">
-            <ul>
-                <li><a (click)="navegarParaHome()">Home</a></li>
-				<li><a (click)="navegarParaSobre()">Sobre Nós</a></li>
-  				<li><a (click)="navegarParaServicos()">Serviços Disponíveis</a></li>
-  				<li><a (click)="navegarParaColaboradores()">Colaboradores</a></li>
-  				<li><a (click)="navegarParaParcerias()">Parcerias</a></li>
- 				<li><a (click)="navegarParaNoticias()">Notícias\Blog</a></li>
-  				<li><a (click)="navegarParaEventos()">Eventos</a></li>
-                <li><a (click)="navegarParaContato()" >Contato</a></li>
-            </ul>
-        </nav>
+    <nav class="nav-menu" [class.active]="menuAberto">
+      <ul>
+        <li><a (click)="navegarParaHome()">Home</a></li>
+        <li><a (click)="navegarParaSobre()">Sobre Nós</a></li>
+        <li><a (click)="navegarParaServicos()">Serviços Disponíveis</a></li>
+        <li><a (click)="navegarParaColaboradores()">Colaboradores</a></li>
+        <li><a (click)="navegarParaParcerias()">Parcerias</a></li>
+        <li><a (click)="navegarParaNoticias()">Notícias\Blog</a></li>
+        <li><a (click)="navegarParaEventos()">Eventos</a></li>
+        <li><a (click)="navegarParaContato()">Contato</a></li>
+        <li><a class="logout-header" (click)="logout()">Sair</a></li>
+      </ul>
+    </nav>
+  
     <div class="login-container">
-      <div class="logo"><img src="assets/imagens/usuario.png" alt=""></div>
+      <div class="logo">
+        <img src="assets/imagens/usuario.png" alt="">
+      </div>
       <div class="login-text" *ngIf="!userName">
         <a href="/login" style="text-decoration: none; color: white">
           <span class="sign-in-title">Entre</span>
-          <span> <br> ou</span>
+          <span><br> ou</span>
           <span class="sign-up-title"> Cadastre-se</span>
         </a>
       </div>
       <div class="login-text" *ngIf="userName">
         <span class="sign-in-title">Olá, {{ userName }}!</span>
-        <button (click)="logout()" style="background-color: transparent; border: 1px solid white; color: white; padding: 4px 10px; border-radius: 5px; cursor: pointer; margin-left: 15px">
-            Sair
-          </button>
+        <button (click)="logout()" class="logout-btn">Sair</button>
       </div>
     </div>
   </header>
