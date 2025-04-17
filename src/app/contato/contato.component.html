@@ -1,6 +1,12 @@
 <!-- contato.component.html -->
 <div class="contato-container">
 	<h1 class="titulo">Fale Conosco</h1>
+	<div *ngIf="alerta.visivel" class="alerta" [class]="'alerta-' + alerta.tipo">
+		<div class="alerta-conteudo">
+		  <span>{{ alerta.mensagem }}</span>
+		  <button class="alerta-fechar" (click)="fecharAlerta()">×</button>
+		</div>
+	  </div>
   
 	<form [formGroup]="contatoForm" (ngSubmit)="enviarMensagem()" class="formulario-contato">
 		<label for="nome">Nome</label>
