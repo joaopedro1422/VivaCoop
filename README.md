@@ -7,6 +7,7 @@ Atua junto aos seus clientes somente através de seus sócios, o que significa n
 
 Por ser sócio, aufere uma remuneração superior, não apenas pela eliminação do intermediador, mas pela oportunidade que tem de gerir os seus próprios rendimentos, recolhimento do INSS, seguro de vida e convênios. Também conta com um fundo cooperativo, uma reserva financeira programada para ser usada ao final de cada ano.
 
+📑 [Clique aqui para ver o relatório em PDF](Projeto 1 - Especificação - Cooperativa.pdf)
 
 ##
 
