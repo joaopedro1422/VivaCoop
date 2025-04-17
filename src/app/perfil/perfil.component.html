@@ -1,0 +1,25 @@
+<div class="container-perfil">
+    <div class="content">
+      <div class="container-img">
+        <img [src]="fotoUrl" alt="Foto do colaborador" *ngIf="fotoUrl">
+        <label for="upload" class="upload-btn">Editar imagem</label>
+        <input type="file" id="upload" (change)="onFileSelected($event)" hidden>
+      </div>
+      <div class="content-text">
+        <label>Nome:</label>
+        <input [(ngModel)]="user.name" type="text" />
+    
+        <label>Descrição:</label>
+        <textarea [(ngModel)]="user.descricao"></textarea>
+    
+        <label>Área:</label>
+        <input [(ngModel)]="user.area" type="text" />
+    
+        <label>LinkedIn:</label>
+        <input [(ngModel)]="user.linkedin" type="text" />
+    
+        <button (click)="salvar()">Salvar</button>
+      </div>
+     
+    </div>
+  </div>

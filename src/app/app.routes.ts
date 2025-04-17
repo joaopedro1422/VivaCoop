@@ -17,9 +17,10 @@ import { AdicionarColaboradorComponent } from './adicionar-colaborador/adicionar
 import { ColaboradoresAtivosComponent } from './colaboradores-ativos/colaboradores-ativos.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
-
+import { PerfilComponent } from './perfil/perfil.component';
 export const routes: Routes = [
 	{ path: 'login', component: LoginComponent},
+	{ path: 'perfil', component: PerfilComponent},
 	{ path: 'registro', component: RegistroComponent},
    { path: 'home', component: HomeComponent },
    { path: 'sobre', component: SobreNosComponent },

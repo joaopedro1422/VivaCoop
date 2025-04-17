@@ -28,6 +28,12 @@
   color: white;
   margin-left: 10px;
 }
+.logout-btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+  border-color: rgb(0, 0, 134);
+}
 @media screen and (min-width: 1024px) {
   .logout-header{
     display: none;

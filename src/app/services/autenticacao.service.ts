@@ -7,30 +7,39 @@ import { BehaviorSubject } from 'rxjs';
 export class AutenticacaoService {
   private currentUser: User | null = null;
   private loggedInUserKey = 'loggedInUser';
-  private loggedInUserSubject = new BehaviorSubject<any>(JSON.parse(localStorage.getItem('loggedInUser') || 'null'));
+  private loggedInUserSubject = new BehaviorSubject<User | null>(null);
   loggedInUser$ = this.loggedInUserSubject.asObservable();
 
   constructor(private userService: UsersService) { }
+  cadastra (usuario: string, senha : string , email: string, dataNascimento: Date, nome:string, foto: string, linkedin: string, area: string, descricao: string){
+    if(!this.userService.existsUser(usuario)){
+      this.userService.addUser(usuario,senha,email, dataNascimento, nome, area, descricao, foto, linkedin);
+      return true;
+    }
+    return false;
+   
+  }
+  
   login(username: string, password: string): boolean {
     const user = this.userService.findUser(username, password);
     console.log('chegou aqui 2')
     if (user) {
       
-      this.loggedInUserSubject.next(user); 
-      localStorage.setItem(this.loggedInUserKey, JSON.stringify(user));
-      console.log('chegou aqui 3')
+      this.loggedInUserSubject.next(user);
       return true;
     }
     return false;
   }
-  get loggedInUser() {
-    const user = localStorage.getItem(this.loggedInUserKey);
-    return user ? JSON.parse(user) : null;
+  get loggedInUser(): User | null {
+    return this.loggedInUserSubject.value;
   }
   
   logout(): void {
-    localStorage.removeItem('loggedInUser');
-    this.loggedInUserSubject.next(null); // Remove o usuário logado
+    this.loggedInUserSubject.next(null); 
+  }
+  atualizaUsuario(user: User){
+    this.userService.updateUser(user);
+    this.loggedInUserSubject.next(user);
   }
  
 
