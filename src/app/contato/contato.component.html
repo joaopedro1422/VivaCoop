@@ -24,7 +24,10 @@
 		</select>
 		<label for="nome">Mensagem</label>
 	  <textarea formControlName="mensagem" placeholder="Mensagem" rows="5" required></textarea>
-	  <button type="submit" [disabled]="contatoForm.invalid">Enviar</button>
+	  <button type="submit">Enviar</button>
+	  <div *ngIf="contatoForm.invalid && contatoForm.touched" class="mensagem-erro-geral">
+		  <p>⚠️ Por favor, preencha todos os campos corretamente antes de enviar.</p>
+		</div>
 	</form>
   
 	<div class="info-contato">

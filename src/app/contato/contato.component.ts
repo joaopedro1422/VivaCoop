@@ -15,7 +15,7 @@ export class ContatoComponent {
 		this.contatoForm = this.fb.group({
 			nome: ['', Validators.required],
 			email: ['', [Validators.required, Validators.email]],
-			telefone: [''],
+			telefone: ['', Validators.required],
 			assunto: ['', Validators.required],
 			mensagem: ['', Validators.required]
 		});
@@ -29,5 +29,8 @@ export class ContatoComponent {
 			alert('Mensagem enviada com sucesso!');
 			this.contatoForm.reset();
 		}
+		else {
+			this.contatoForm.markAllAsTouched();
+		  }
 	}
 }
