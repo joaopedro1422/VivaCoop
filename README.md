@@ -21,6 +21,3 @@ Iniciar o servidor de desenvolvimento em qualquer IP da rede
 ```bash
 ng serve --host 0.0.0.0 --disable-host-check --open
 ```
-
-Irá abrir uma página no seu navegador
-
