@@ -28,4 +28,8 @@ export class LoginComponent {
       });
     }
   }
+
+  navegarParaColaboradores() {
+	this.router.navigate(['/colaboradores']).then(() => window.scrollTo(0, 0));
+}
 }

@@ -56,6 +56,10 @@
   .register-link {
     text-align: center;
     margin-top: 10px;
+}
+.register-link a{
+	color: #0056b3;
+	cursor: pointer;
   }
 
   .conteudo-form{

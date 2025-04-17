@@ -12,7 +12,7 @@
          
         </form>
         <p *ngIf="error" style="color: red;">{{ error }}</p>
-        <p class="register-link">Ainda não tem conta? <a href="/registro">Registre-se</a></p>
+        <p class="register-link">Ainda não é colaborador? <a (click)="navegarParaColaboradores()">Registre-se</a></p>
       </div>
 
     </div>
