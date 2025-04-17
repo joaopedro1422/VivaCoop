@@ -6,14 +6,15 @@
     <div class="conteudo-form">
       <h2>Novo por aqui ?</h2>
       <p>Registre-se e tenha acesso a todos os benefícios de ser VIVA</p>
-      <form>
-        <input type="text" placeholder="Nome Completo" />
-        <input type="date" placeholder="data de Nascimento" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Usuário" />
-        <input type="password" placeholder="Senha" />
+      <form  (ngSubmit)="cadastra()" >
+        <input type="text" [(ngModel)]="nome" name="nome"  required placeholder="Nome Completo" />
+        <input type="date"  [(ngModel)]="dataNascimento" name="dataNascimento"  required  placeholder="data de Nascimento" />
+        <input type="text" [(ngModel)]="email" name="email"  required  placeholder="Email" />
+        <input type="text" [(ngModel)]="usuario" name="usuario"  required  placeholder="Usuário" />
+        <input type="password" [(ngModel)]="senha" name="senha"  required  placeholder="Senha" />
         <button type="submit">Criar conta</button>
       </form>
+      <p *ngIf="error" style="color: red;">{{ error }}</p>
     </div>
     
     </div>

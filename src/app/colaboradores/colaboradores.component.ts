@@ -4,6 +4,7 @@ import { ColaboradoresService, Colaborador } from '../colaboradores-servico/cola
 import { CommonModule } from '@angular/common';
 import  { AutenticacaoService } from '../services/autenticacao.service';
 import { Router } from '@angular/router';
+import { User, UsersService } from '../services/users.service';
 @Component({
   selector: 'app-colaboradores',
   imports: [CommonModule],
@@ -11,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrl: './colaboradores.component.css'
 })
 export class ColaboradoresComponent {
+  colaboradores: User[] = [];
   userName: string | null = null;
   @ViewChild('formulario') formulario!: ElementRef;
 
@@ -18,16 +20,16 @@ export class ColaboradoresComponent {
     this.formulario.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
-  colaboradores: Colaborador[] = [];
+  
 
-  constructor(private colaboradoresService: ColaboradoresService, private authService: AutenticacaoService, private router: Router) {}
+  constructor(private colaboradoresService: ColaboradoresService, private authService: AutenticacaoService, private router: Router, private userService : UsersService) {}
 
   ngOnInit() {
-    this.colaboradoresService.getColaboradores().subscribe(data => {
-      this.colaboradores = data;
-    });
+    this.colaboradores = this.userService.getUsers();
+    console.log("exemplo:::");
+    console.log(this.colaboradores);
     this.authService.loggedInUser$.subscribe((user) => {
-      this.userName = user?.name || null;  // Atualiza o nome do usuário no header
+      this.userName = user?.name || null;
     });
   }
 

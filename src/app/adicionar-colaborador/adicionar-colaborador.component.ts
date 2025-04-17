@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ColaboradoresService, Colaborador } from '../colaboradores-servico/colaboradores.service';
+import { User } from '../services/users.service';
+import { AutenticacaoService } from '../services/autenticacao.service';
 
 @Component({
   selector: 'app-adicionar-colaborador',
@@ -13,36 +15,44 @@ import { ColaboradoresService, Colaborador } from '../colaboradores-servico/cola
 })
 
 export class AdicionarColaboradorComponent {
-  novoColaborador: Colaborador = {
-    nome: '',
-    area: '',
-    descricao: '',
-    fotoUrl: '',
-    linkedin: ''
-  };
+  id = 0;
+  name = '';
+  area = '';
+  descricao = '';
+  fotoUrl = '';
+  linkedin = '';
+  username = '';
+  password = '';
+  email = '';
+  dataNascimento = new Date();
 
+  error = '';
+ 
   constructor(
+    private authService: AutenticacaoService,
     private colaboradoresService: ColaboradoresService,
     private router: Router
   ) {}
 
   adicionarColaborador() {
-    this.colaboradoresService.adicionarColaborador({ ...this.novoColaborador });
+    if(!this.authService.cadastra(this.username,this.password, this.email, this.dataNascimento, this.name, this.fotoUrl, this.linkedin, this.area, this.descricao)){
+      setTimeout(() => {
+        this.error = 'Usuário já utilizado';
+      });
+    }
     alert('Colaborador adicionado com sucesso!');
     this.router.navigate(['/area-colaborador']);
   }
 
-  onFileSelected(event: any) {
+  onFileSelected(event: any): void {
     const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-  
-      reader.onload = () => {
-        // Aqui você salva a imagem em base64 (exemplo)
-        this.novoColaborador.fotoUrl = reader.result as string;
-      };
-  
-      reader.readAsDataURL(file);
-    }
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.fotoUrl = reader.result as string;
+      this.fotoUrl = this.fotoUrl;
+    };
+    reader.readAsDataURL(file);
   }
 }
